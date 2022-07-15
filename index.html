@@ -44,17 +44,42 @@
 
 </style>
 <BODY>
-<div class="sidebar">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="even.html">Evening batch</a> 
   <a href="index.html">Morning batch</a>
 </div>
   
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Courses</button>  
+<p align="center">
+
+
 <p align="center">
 <iframe title="Morning batch analysis" width="1400" height="800"
 
 src="https://app.powerbi.com/reportEmbed?reportId=feeb42d2-a523-4d17-82d2-a1be7139ec04&autoAuth=true&ctid=c68f4f84-552e-4a15-a7d5-e1977bf86b2e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
   
 </p>
+
+
+
+</div>
+
+  
+
+  
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
 </BODY>
 </HTML>
